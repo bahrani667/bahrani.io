@@ -11,20 +11,13 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 27 Feb 2024 20:50:45 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate>
     <atom:link href="https://bahranix.tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Test</title>
-      <link>https://bahranix.tech/docs/test/</link>
-      <pubDate>Tue, 27 Feb 2024 20:50:45 +0700</pubDate>
-      <guid>https://bahranix.tech/docs/test/</guid>
-      <description>Hello Word tes apa bisa</description>
-    </item>
-    <item>
-      <title>My 1st post</title>
-      <link>https://bahranix.tech/page/</link>
+      <title>Selamat Datang Di Blog Saya</title>
+      <link>https://bahranix.tech/docs/sambutan/</link>
       <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
-      <guid>https://bahranix.tech/page/</guid>
+      <guid>https://bahranix.tech/docs/sambutan/</guid>
       <description>Desc Text.</description>
     </item>
   </channel>
