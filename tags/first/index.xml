@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>https://bahranix.tech/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>first on My New Hugo Site</title>
+    <link>https://bahranix.tech/tags/first/</link>
+    <description>Recent content in first on My New Hugo Site</description>
     <image>
       <title>My New Hugo Site</title>
       <url>https://bahranix.tech/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
@@ -11,15 +11,8 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 27 Feb 2024 20:50:45 +0700</lastBuildDate>
-    <atom:link href="https://bahranix.tech/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Test</title>
-      <link>https://bahranix.tech/docs/test/</link>
-      <pubDate>Tue, 27 Feb 2024 20:50:45 +0700</pubDate>
-      <guid>https://bahranix.tech/docs/test/</guid>
-      <description>Hello Word tes apa bisa</description>
-    </item>
+    <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate>
+    <atom:link href="https://bahranix.tech/tags/first/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My 1st post</title>
       <link>https://bahranix.tech/page/</link>
