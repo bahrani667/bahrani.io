@@ -86,14 +86,14 @@ params:
 
   socialIcons:
     - name: instagram
-      url: "https://www.instagram.com/"
+      url: "https://www.instagram.com/bahran_07/"
     - name: github
-      url: "https://github.com/username_anda/"
+      url: "https://github.com/bahrani667/"
     - name: linkedin
-      url: "https://www.linkedin.com/in/username_anda/"
+      url: "https://www.linkedin.com/in/bahranibahrani/"
   analytics:
     google:
-      SiteVerificationTag: "XYZabc"
+      SiteVerificationTag: "G-GHX4M8DEHM"
     bing:
       SiteVerificationTag: "XYZabc"
     yandex:
