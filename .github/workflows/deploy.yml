@@ -1,4 +1,5 @@
 name: Publish to GH Pages
+
 on:
   push:
     branches:
@@ -8,28 +9,29 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    
     steps:
       - name: Checkout source
         uses: actions/checkout@v3
         with:
           submodules: true
 
-      - name: Checkout destination
+      - name: Checkout destination (gh-pages branch)
         uses: actions/checkout@v3
         if: github.ref == 'refs/heads/main'
         with:
           ref: gh-pages
           path: built-site
 
-      - name: Setup Hugo
+      - name: Set up Hugo
         run: |
           curl -L -o /tmp/hugo.tar.gz 'https://github.com/gohugoio/hugo/releases/download/v0.112.4/hugo_extended_0.112.4_linux-amd64.tar.gz'
           tar -C ${RUNNER_TEMP} -zxvf /tmp/hugo.tar.gz hugo
-          
-      - name: Build
+
+      - name: Build the site
         run: ${RUNNER_TEMP}/hugo
 
-      - name: Deploy
+      - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
         run: |
           cp -R public/* ${GITHUB_WORKSPACE}/built-site/
@@ -38,4 +40,4 @@ jobs:
           git config user.name 'bahrani667'
           git config user.email 'bahrani667j@gmail.com'
           git commit -m 'Updated site'
-          git push
+          git push origin gh-pages
