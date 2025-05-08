@@ -34,10 +34,18 @@ jobs:
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
         run: |
+          # Copy the built site to the gh-pages branch directory
           cp -R public/* ${GITHUB_WORKSPACE}/built-site/
+          
+          # Navigate to the gh-pages directory
           cd ${GITHUB_WORKSPACE}/built-site
-          git add .
+          
+          # Check if there are any changes in the directory
+          git diff --exit-code || git commit -am 'Updated site'
+          
+          # Configure git user settings for commit
           git config user.name 'bahrani667'
           git config user.email 'bahrani667j@gmail.com'
-          git commit -m 'Updated site'
+          
+          # Push changes to the gh-pages branch
           git push origin gh-pages
